@@ -8,7 +8,7 @@ A cute, experimental Python project for connecting LLMs (like Ollama) to Discord
 
 ## ✨ Capabilities / Tool Calls
 - LLM chat (Ollama, local or remote)
-- RAG
+- RAG (past memories, file upload)
 - Web search integration
 - Gif support
 - Modular scripting
@@ -48,6 +48,7 @@ A cute, experimental Python project for connecting LLMs (like Ollama) to Discord
    ```powershell
    python main.py
    ```
+> You'll have to download the model from ollama first. Please use a model with vision capabilities if images can be sent in the discord channel.
 
 ---
 
