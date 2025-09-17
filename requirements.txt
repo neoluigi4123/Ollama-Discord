@@ -1,9 +1,9 @@
 --extra-index-url https://download.pytorch.org/whl/cu121
-python-magic-bin==0.4.14
+
 Pillow==10.4.0
 discord.py==2.4.0
 ollama==0.5.1
-ddgs==7.3.2
+ddgs==9.5.5
 requests==2.32.3
 beautifulsoup4==4.12.3
 readability-lxml==0.8.1
@@ -11,8 +11,18 @@ python-docx==1.0.0
 odfpy==1.4.1
 striprtf==0.0.26
 PyPDF2==3.0.1
-chromadb==0.6.2-bin
+
+# ChromaDB
+chromadb==0.6.2
+
+# Whisper
 openai-whisper==20231117
+
+# Torch stack
 torch==2.2.2
 torchvision==0.17.2
 torchaudio==2.2.2
+
+# OS-specific: magic binding
+python-magic==0.4.27; sys_platform != "win32"
+python-magic-bin==0.4.14; sys_platform == "win32"
